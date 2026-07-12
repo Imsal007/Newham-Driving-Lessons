@@ -1,0 +1,292 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "category": "Road Signs",
+      "question": "What does a circular green sign with a white arrow pointing up mean?",
+      "options": ["Minimum speed limit", "One way traffic", "Motorway begins", "National speed limit applies"],
+      "correct": 1,
+      "explanation": "A circular green sign with a white arrow indicates one-way traffic. You must travel in the direction of the arrow.",
+      "source": "Highway Code Rule 181"
+    },
+    {
+      "id": 2,
+      "category": "Road Signs",
+      "question": "What does a red triangle with a black exclamation mark mean?",
+      "options": ["Stop immediately", "Warning: danger ahead", "No entry", "Speed limit ends"],
+      "correct": 1,
+      "explanation": "A red triangle with an exclamation mark is a warning sign indicating general danger ahead. Always be prepared to slow down or stop.",
+      "source": "Highway Code Rule 57"
+    },
+    {
+      "id": 3,
+      "category": "Road Signs",
+      "question": "What shape is a 'Give Way' sign at a junction?",
+      "options": ["Circle", "Square", "Inverted triangle", "Octagon"],
+      "correct": 2,
+      "explanation": "The 'Give Way' sign is an inverted triangle (point down). It means you must give priority to traffic on the major road.",
+      "source": "Highway Code Rule 172"
+    },
+    {
+      "id": 4,
+      "category": "Road Signs",
+      "question": "What does a blue circle with a white bicycle mean?",
+      "options": ["Cycle route", "No cycling allowed", "Cycle lane mandatory", "Bicycle parking only"],
+      "correct": 2,
+      "explanation": "A blue circle with a white bicycle indicates a mandatory cycle lane. Cyclists MUST use this lane and other vehicles must not drive in it.",
+      "source": "Highway Code Rule 140"
+    },
+    {
+      "id": 5,
+      "category": "Rules of the Road",
+      "question": "What is the national speed limit for cars on a single carriageway?",
+      "options": ["50 mph", "60 mph", "70 mph", "40 mph"],
+      "correct": 1,
+      "explanation": "The national speed limit for cars and motorcycles on a single carriageway is 60 mph, unless signs show otherwise.",
+      "source": "Highway Code Rule 124"
+    },
+    {
+      "id": 6,
+      "category": "Rules of the Road",
+      "question": "When may you overtake on the left?",
+      "options": ["Never", "When traffic is moving slowly in queues", "On a motorway only", "When the vehicle ahead is turning right"],
+      "correct": 1,
+      "explanation": "You may overtake on the left when traffic is moving slowly in queues, or when the vehicle ahead is turning right and you are going straight ahead.",
+      "source": "Highway Code Rule 268"
+    },
+    {
+      "id": 7,
+      "category": "Rules of the Road",
+      "question": "What should you do at a pelican crossing when the amber light is flashing?",
+      "options": ["Stop immediately", "Give way to pedestrians already crossing", "Proceed if no pedestrians are waiting", "Wait for green light"],
+      "correct": 1,
+      "explanation": "At a pelican crossing, when the amber light flashes, you must give way to pedestrians already on the crossing. If the crossing is clear, you may proceed.",
+      "source": "Highway Code Rule 196"
+    },
+    {
+      "id": 8,
+      "category": "Rules of the Road",
+      "question": "What is the minimum legal tread depth for car tyres?",
+      "options": ["1.0 mm", "1.6 mm", "2.0 mm", "3.0 mm"],
+      "correct": 1,
+      "explanation": "The minimum legal tread depth for car tyres is 1.6 mm across the central three-quarters of the tyre and around the entire circumference.",
+      "source": "Highway Code Rule 98"
+    },
+    {
+      "id": 9,
+      "category": "Safety & Emergencies",
+      "question": "What should you do if your vehicle breaks down on a motorway?",
+      "options": ["Stay in the vehicle", "Pull onto the hard shoulder, exit via left door, wait behind barrier", "Try to fix it yourself", "Wave for help from other drivers"],
+      "correct": 1,
+      "explanation": "If you break down on a motorway, pull onto the hard shoulder, switch on hazard lights, exit via the left-hand door, and wait behind the safety barrier. Call for assistance.",
+      "source": "Highway Code Rule 275"
+    },
+    {
+      "id": 10,
+      "category": "Safety & Emergencies",
+      "question": "When should you use your fog lights?",
+      "options": ["Whenever it's raining", "When visibility is less than 100 metres", "At night on unlit roads", "In heavy traffic"],
+      "correct": 1,
+      "explanation": "Fog lights should only be used when visibility is seriously reduced (less than 100 metres). Using them unnecessarily can dazzle other drivers.",
+      "source": "Highway Code Rule 236"
+    },
+    {
+      "id": 11,
+      "category": "Safety & Emergencies",
+      "question": "What is the correct procedure if you have a tyre blowout while driving?",
+      "options": ["Brake hard immediately", "Steer firmly, ease off accelerator, brake gently when safe", "Accelerate to maintain control", "Turn steering wheel sharply"],
+      "correct": 1,
+      "explanation": "If you have a tyre blowout, hold the steering wheel firmly, ease off the accelerator gradually, and brake gently only when you have full control. Pull over safely.",
+      "source": "DVSA Guide to Driving Safety"
+    },
+    {
+      "id": 12,
+      "category": "Vehicle Handling",
+      "question": "What is the purpose of engine braking?",
+      "options": ["To increase speed", "To slow the vehicle using lower gears", "To save fuel only", "To warm up the engine"],
+      "correct": 1,
+      "explanation": "Engine braking uses lower gears to slow the vehicle without excessive use of foot brakes. It's particularly useful on long downhill stretches to prevent brake fade.",
+      "source": "DVSA Driving Manual Chapter 5"
+    },
+    {
+      "id": 13,
+      "category": "Vehicle Handling",
+      "question": "When parking uphill with a curb, which way should you turn your wheels?",
+      "options": ["Towards the curb", "Away from the curb", "Straight ahead", "It doesn't matter"],
+      "correct": 0,
+      "explanation": "When parking uphill with a curb, turn your wheels towards the curb. If the vehicle rolls, the curb will stop it. Also apply the handbrake firmly.",
+      "source": "Highway Code Rule 239"
+    },
+    {
+      "id": 14,
+      "category": "Vehicle Handling",
+      "question": "What does ABS stand for?",
+      "options": ["Automatic Braking System", "Anti-lock Braking System", "Advanced Brake Support", "All-wheel Braking System"],
+      "correct": 1,
+      "explanation": "ABS stands for Anti-lock Braking System. It prevents wheels from locking during hard braking, allowing you to steer while braking heavily.",
+      "source": "Highway Code Rule 120"
+    },
+    {
+      "id": 15,
+      "category": "Motorway Rules",
+      "question": "What is the minimum age to drive on a motorway in the UK?",
+      "options": ["16", "17", "18", "21"],
+      "correct": 1,
+      "explanation": "You must be at least 17 years old and hold a valid provisional or full driving licence to drive on a motorway. Learners must be accompanied by an approved instructor.",
+      "source": "Highway Code Rule 253"
+    },
+    {
+      "id": 16,
+      "category": "Motorway Rules",
+      "question": "Which lane should you normally use on a motorway?",
+      "options": ["Left-hand lane", "Middle lane", "Right-hand lane", "Any lane"],
+      "correct": 0,
+      "explanation": "You should always drive in the left-hand lane when the road ahead is clear. Use the right lanes for overtaking only, then return to the left.",
+      "source": "Highway Code Rule 264"
+    },
+    {
+      "id": 17,
+      "category": "Motorway Rules",
+      "question": "What do red flashing lights on a motorway gantry mean?",
+      "options": ["Slow down", "Stop - lane closed ahead", "Speed camera active", "Road works ahead"],
+      "correct": 1,
+      "explanation": "Red flashing lights on a motorway gantry mean you MUST STOP. The lane ahead is closed due to an incident, obstruction, or road works.",
+      "source": "Highway Code Rule 277"
+    },
+    {
+      "id": 18,
+      "category": "Motorway Rules",
+      "question": "Are learner drivers allowed on motorways?",
+      "options": ["Yes, with any licensed driver", "Yes, with an approved instructor in a dual-control car", "No, never", "Only on quiet motorways"],
+      "correct": 1,
+      "explanation": "Learner drivers are only allowed on motorways when accompanied by an approved driving instructor in a car with dual controls and L plates displayed.",
+      "source": "Highway Code Rule 253"
+    },
+    {
+      "id": 19,
+      "category": "Hazard Perception",
+      "question": "What is a 'developing hazard' in hazard perception testing?",
+      "options": ["Any potential danger", "Something that would cause you to change speed or direction", "A stationary object", "Weather conditions only"],
+      "correct": 1,
+      "explanation": "A developing hazard is something that would cause you to take action, such as slowing down, stopping, or changing direction. It's not just a potential hazard, but one that is actively developing.",
+      "source": "DVSA Hazard Perception Guide"
+    },
+    {
+      "id": 20,
+      "category": "Hazard Perception",
+      "question": "How many video clips are in the hazard perception test?",
+      "options": ["10", "12", "14", "16"],
+      "correct": 2,
+      "explanation": "The hazard perception test consists of 14 video clips. Thirteen clips contain one developing hazard each, and one clip contains two developing hazards (total 15).",
+      "source": "DVSA Theory Test Guidelines"
+    },
+    {
+      "id": 21,
+      "category": "Road Signs",
+      "question": "What does a yellow box junction mean?",
+      "options": ["You can stop in it if turning right", "You must not enter unless your exit is clear", "It's a pedestrian crossing", "Parking is allowed"],
+      "correct": 1,
+      "explanation": "You must not enter a yellow box junction unless your exit road is clear. Exception: you may enter when turning right and stopped only by oncoming traffic or other right-turning vehicles.",
+      "source": "Highway Code Rule 174"
+    },
+    {
+      "id": 22,
+      "category": "Rules of the Road",
+      "question": "What is the speed limit in built-up areas unless signs show otherwise?",
+      "options": ["20 mph", "30 mph", "40 mph", "50 mph"],
+      "correct": 1,
+      "explanation": "The speed limit in built-up areas is 30 mph unless signs show otherwise. Street lights placed no more than 200 yards apart usually indicate a 30 mph zone.",
+      "source": "Highway Code Rule 124"
+    },
+    {
+      "id": 23,
+      "category": "Safety & Emergencies",
+      "question": "What should you do before towing a trailer?",
+      "options": ["Just attach it and drive", "Ensure it's properly secured, lights work, and you're licensed", "Only check the tyres", "Drive slowly for first mile"],
+      "correct": 1,
+      "explanation": "Before towing, ensure the trailer is properly secured, all lights work, tyres are correctly inflated, brakes function, and you have the correct licence category for the weight.",
+      "source": "Highway Code Rules 92-96"
+    },
+    {
+      "id": 24,
+      "category": "Vehicle Handling",
+      "question": "When should you use dipped headlights during the day?",
+      "options": ["Never", "Only in tunnels", "When visibility is seriously reduced", "In built-up areas only"],
+      "correct": 2,
+      "explanation": "Use dipped headlights when visibility is seriously reduced (generally when you cannot see more than 100 metres ahead). This makes you visible to others.",
+      "source": "Highway Code Rule 236"
+    },
+    {
+      "id": 25,
+      "category": "Rules of the Road",
+      "question": "Who has priority at an unmarked crossroads?",
+      "options": ["The larger vehicle", "The vehicle on the right", "No one has priority", "The faster vehicle"],
+      "correct": 2,
+      "explanation": "At an unmarked crossroads, no one has priority. All drivers must approach with caution, be prepared to stop, and give way as necessary to avoid accidents.",
+      "source": "Highway Code Rule 172"
+    },
+    {
+      "id": 26,
+      "category": "Motorway Rules",
+      "question": "What is a smart motorway?",
+      "options": ["A motorway with no speed limit", "A motorway using technology to manage traffic flow", "A toll motorway", "A motorway only for electric vehicles"],
+      "correct": 1,
+      "explanation": "A smart motorway uses technology like variable speed limits and opening/closing lanes to manage traffic flow and reduce congestion. Always obey overhead signals.",
+      "source": "Highway Code Rule 258"
+    },
+    {
+      "id": 27,
+      "category": "Safety & Emergencies",
+      "question": "What distance should you leave when following a vehicle in wet conditions?",
+      "options": ["Same as dry conditions", "Double the normal gap", "Triple the normal gap", "Half the normal gap"],
+      "correct": 1,
+      "explanation": "In wet conditions, stopping distances can double. Leave at least twice the normal gap between you and the vehicle ahead to allow for increased braking distance.",
+      "source": "Highway Code Rule 126"
+    },
+    {
+      "id": 28,
+      "category": "Road Signs",
+      "question": "What does a white sign with a red circle and diagonal line through a motorcycle mean?",
+      "options": ["Motorcycle parking", "No motorcycles allowed", "Motorcycle route", "Motorcycle speed limit"],
+      "correct": 1,
+      "explanation": "A red circle with a diagonal line through a motorcycle symbol means no motorcycles are allowed beyond this point. It's a prohibition sign.",
+      "source": "Highway Code Section on Traffic Signs"
+    },
+    {
+      "id": 29,
+      "category": "Vehicle Handling",
+      "question": "What is aquaplaning?",
+      "options": ["Driving through water safely", "Tyres losing grip on wet surfaces due to water buildup", "A type of water sport", "Cleaning your car"],
+      "correct": 1,
+      "explanation": "Aquaplaning occurs when a layer of water builds up between tyres and the road surface, causing loss of traction. Reduce speed in heavy rain to prevent it.",
+      "source": "Highway Code Rule 126"
+    },
+    {
+      "id": 30,
+      "category": "Rules of the Road",
+      "question": "When must you stop at a school crossing patrol?",
+      "options": ["Only when children are crossing", "When the patrol shows the stop sign", "When the patrol waves at you", "Never, just slow down"],
+      "correct": 1,
+      "explanation": "You MUST stop when a school crossing patrol shows the stop sign. It's a legal requirement. Do not proceed until the sign is withdrawn and the crossing is clear.",
+      "source": "Highway Code Rule 210"
+    },
+    {
+      "id": 31,
+      "category": "Hazard Perception",
+      "question": "What is the maximum score per developing hazard in the hazard perception test?",
+      "options": ["3 points", "4 points", "5 points", "6 points"],
+      "correct": 2,
+      "explanation": "Each developing hazard can score up to 5 points. You score higher by clicking earlier in the development of the hazard, but not too early.",
+      "source": "DVSA Hazard Perception Scoring Guide"
+    },
+    {
+      "id": 32,
+      "category": "Safety & Emergencies",
+      "question": "What should you do if you're involved in a minor collision with no injuries?",
+      "options": ["Drive away immediately", "Stop, exchange details, report to police within 24 hours if required", "Only stop if the other driver insists", "Call an ambulance"],
+      "correct": 1,
+      "explanation": "Stop immediately, exchange details with the other party, and if you don't exchange details at the scene, report it to police within 24 hours. Never leave the scene.",
+      "source": "Road Traffic Act 1988"
+    }
+  ]
+}
