@@ -1,46 +1,211 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Driving Blog | Expert Tips, Test Routes & Learner Guides – Newham Driving School</title>
-    <meta name="description" content="Expert driving tips, test routes for Chingford, Barking, Wanstead & Goodmayes, theory help, and learner guides from your Newham driving instructor. Pass first time!" />
-    <meta name="keywords" content="driving blog, driving tips, test routes, Chingford test centre, Barking test centre, Wanstead, Goodmayes, Newham driving instructor, theory test help, pass driving test" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
-    <link rel="canonical" href="https://imsal007.github.io/Newham-Driving-Lessons/blog.html" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://imsal007.github.io/Newham-Driving-Lessons/blog.html" />
-    <meta property="og:title" content="Driving Blog | Expert Tips, Test Routes & Learner Guides – Newham" />
-    <meta property="og:description" content="Expert driving tips, test routes for Chingford, Barking, Wanstead & Goodmayes, theory help, and learner guides from your Newham driving instructor." />
-    <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop" />
-    <meta property="og:site_name" content="Newham Driving School" />
-    <meta property="og:locale" content="en_GB" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Driving Blog | Expert Tips, Test Routes & Learner Guides - Newham Driving School</title>
+    <meta name="description" content="Expert driving tips, test routes for Chingford, Wanstead, Barking & Goodmayes, theory test help, and learner guides. Pass your driving test first time with Newham's top-rated instructor.">
+    <meta name="keywords" content="driving blog, Newham driving tips, Chingford test routes, Wanstead driving test, Barking test centre tips, Goodmayes driving lessons, theory test help, learner driver guides, pass first time">
+    <meta name="author" content="Newham Driving School">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://imsal007.github.io/Newham-Driving-Lessons/blog.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://imsal007.github.io/Newham-Driving-Lessons/blog.html">
+    <meta property="og:site_name" content="Newham Driving School">
+    <meta property="og:title" content="Driving Blog | Expert Tips, Test Routes & Learner Guides">
+    <meta property="og:description" content="Expert driving tips, test routes for Chingford, Wanstead, Barking & Goodmayes, theory test help, and learner guides. Pass first time.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_GB">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Driving Blog | Expert Tips, Test Routes & Learner Guides – Newham" />
-    <meta name="twitter:description" content="Expert driving tips, test routes for Chingford, Barking, Wanstead & Goodmayes, theory help, and learner guides from your Newham driving instructor." />
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://imsal007.github.io/Newham-Driving-Lessons/blog.html">
+    <meta name="twitter:title" content="Driving Blog | Expert Tips, Test Routes & Learner Guides">
+    <meta name="twitter:description" content="Expert driving tips, test routes, theory help, and learner guides from your Newham driving instructor.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop">
+    <meta name="twitter:creator" content="@NewhamDriving">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Additional in-page styles to complement the theme -->
+    <style>
+        /* Extend the Blotato theme for blog-specific elements */
+        .badge-gradient {
+            background: linear-gradient(135deg, var(--accent-orange), var(--accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
 
-    <!-- Schema.org markup for Blog -->
+        .blog-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .blog-meta i {
+            width: 14px;
+            height: 14px;
+            display: inline;
+            vertical-align: middle;
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+        }
+
+        .trust-item i {
+            color: var(--accent-orange);
+        }
+
+        .cta-section {
+            padding: 4rem 1.5rem;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            text-align: center;
+        }
+
+        .cta-content {
+            max-width: 700px;
+            margin: 0 auto;
+            background: rgba(30, 41, 59, 0.6);
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            border-radius: var(--radius-2xl);
+            border: 1px solid var(--border-color);
+        }
+
+        .cta-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .cta-content p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+    </style>
+
+    <!-- Structured Data – Blog & FAQ (all 8 posts) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Blog",
         "name": "Newham Driving School Blog",
-        "description": "Expert driving tips, test routes, and learner guides for Newham, Stratford, Wanstead, Goodmayes, Barking, and Chingford.",
+        "description": "Expert driving tips, test routes, and learner guides for Newham, Chingford, Wanstead, Barking & Goodmayes",
         "url": "https://imsal007.github.io/Newham-Driving-Lessons/blog.html",
         "publisher": {
             "@type": "DrivingSchool",
             "name": "Newham Driving School",
-            "areaServed": ["Newham", "Stratford", "Wanstead", "Goodmayes", "Barking", "Chingford"]
-        }
+            "url": "https://imsal007.github.io/Newham-Driving-Lessons",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://imsal007.github.io/Newham-Driving-Lessons/logo.png"
+            }
+        },
+        "blogPost": [
+            {
+                "@type": "BlogPosting",
+                "headline": "How to Pass the Chingford Driving Test – Routes & Tips",
+                "description": "Master the challenging roundabouts and junctions at Chingford test centre",
+                "datePublished": "2026-07-11",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Top 10 Mistakes Learners Make in Barking",
+                "description": "Avoid these common errors that cost learners their test at Barking DVSA centre",
+                "datePublished": "2026-07-08",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Theory Test 2026 – What's Changed?",
+                "description": "Stay updated with the latest changes to the UK theory test and hazard perception",
+                "datePublished": "2026-07-05",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "How to Stay Calm on Your Driving Test",
+                "description": "Proven techniques to manage test anxiety and perform your best on the big day",
+                "datePublished": "2026-06-28",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Winter Driving Tips for New Drivers",
+                "description": "Essential advice for safe driving in snow, ice, and poor visibility conditions",
+                "datePublished": "2026-06-20",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Automatic vs Manual – Which is Best for You?",
+                "description": "Compare automatic and manual transmissions to choose the right learning path",
+                "datePublished": "2026-06-15",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "Understanding the Highway Code – Key Changes",
+                "description": "Navigate the updated Highway Code rules every driver needs to know",
+                "datePublished": "2026-06-10",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            },
+            {
+                "@type": "BlogPosting",
+                "headline": "What to Expect on Your First Driving Lesson",
+                "description": "A complete guide to help you prepare for your very first lesson with confidence",
+                "datePublished": "2026-06-01",
+                "author": { "@type": "Person", "name": "Newham Driving Instructor" }
+            }
+        ]
     }
     </script>
 
-    <!-- FAQ Schema for AEO (Voice Search) -->
+    <!-- FAQ Schema (for AEO) -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -59,7 +224,7 @@
                 "name": "How many driving lessons do I need before taking my test?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The DVSA recommends around 45 hours of professional lessons plus 20 hours of private practice. However, this varies by individual. Our instructors provide personalized assessments to determine your readiness."
+                    "text": "The DVSA recommends around 45 hours of professional lessons plus 20 hours of private practice. However, this varies by individual. Our instructors provide personalised assessments to determine your readiness."
                 }
             },
             {
@@ -67,55 +232,59 @@
                 "name": "What is the pass rate for Wanstead test centre?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Wanstead test centre has a pass rate of approximately 45-50%, which is slightly below the national average. Our specialized preparation focuses on the specific challenges of Wanstead routes to improve your chances of passing first time."
+                    "text": "Wanstead test centre has a pass rate of approximately 45-50%, which is slightly below the national average. Our specialised preparation focuses on the specific challenges of Wanstead routes to improve your chances of passing first time."
                 }
             }
         ]
     }
     </script>
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    
-    <!-- Performance: Preconnect to external resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://images.unsplash.com">
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-
+    <!-- Skip to content -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+    
     <!-- ===== HEADER ===== -->
-    <header>
+    <header class="header" role="banner">
         <div class="container header-container">
-            <a href="index.html" class="logo"><i data-lucide="steering-wheel"></i>Newham Driving School</a>
-            <nav class="nav">
+            <a href="index.html" class="logo" aria-label="Newham Driving School Home">
+                <i data-lucide="steering-wheel" aria-hidden="true"></i>
+                <span>Newham<br><strong>Driving</strong></span>
+            </a>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+                <i data-lucide="menu" aria-hidden="true"></i>
+            </button>
+            
+            <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
                 <a href="pricing.html">Pricing</a>
                 <a href="areas.html">Areas</a>
                 <a href="test-centres.html">Test Centres</a>
                 <a href="resources.html">Resources</a>
-                <a href="blog.html" class="active">Blog</a>
+                <a href="blog.html" class="active" aria-current="page">Blog</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
+                <a href="https://wa.me/447983546733" class="btn btn-primary" aria-label="Book driving lesson via WhatsApp">
+                    <i data-lucide="message-circle" aria-hidden="true"></i>
+                    <span>Book Now</span>
+                </a>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Toggle menu"><i data-lucide="menu"></i></button>
-            <a href="https://wa.me/447983546733" class="btn btn-primary header-cta"><i data-lucide="message-circle"></i>Book Now</a>
         </div>
     </header>
 
-    <!-- ===== MOBILE MENU (ADDED) ===== -->
-    <div class="mobile-menu" id="mobileMenu">
+    <!-- ===== MOBILE MENU ===== -->
+    <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
         <div class="mobile-menu-header">
-            <a href="index.html" class="logo"><i data-lucide="steering-wheel"></i>Newham Driving</a>
-            <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">
-                <i data-lucide="x"></i>
+            <a href="index.html" class="logo">
+                <i data-lucide="steering-wheel" aria-hidden="true"></i>
+                <span>Newham Driving</span>
+            </a>
+            <button class="mobile-menu-close" id="mobileClose" aria-label="Close mobile menu">
+                <i data-lucide="x" aria-hidden="true"></i>
             </button>
         </div>
-        <nav class="mobile-nav">
+        <nav class="mobile-nav" role="navigation" aria-label="Mobile navigation">
             <a href="index.html">Home</a>
             <a href="services.html">Services</a>
             <a href="pricing.html">Pricing</a>
@@ -128,274 +297,314 @@
         </nav>
     </div>
 
-    <!-- ===== BLOG HERO ===== -->
-    <section class="blog-hero">
-        <div class="container blog-hero-content">
-            <h1 class="gradient-heading">Driving Tips &amp; Local Test Routes</h1>
-            <p class="blog-subtitle">Expert advice for learners in <strong>Newham, Stratford, Wanstead, Goodmayes, Barking &amp; Chingford</strong> – pass your test with confidence.</p>
-            
-            <!-- Trust Indicators (ADDED) -->
-            <div class="trust-indicators" style="display: flex; gap: 2rem; justify-content: center; margin-top: 2rem; flex-wrap: wrap;">
-                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
-                    <i data-lucide="award" style="color: var(--accent-orange);" aria-hidden="true"></i>
-                    <span>DVSA Approved</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
-                    <i data-lucide="star" style="color: var(--accent-orange);" aria-hidden="true"></i>
-                    <span>92% Pass Rate</span>
-                </div>
-                <div style="display: flex; align-items: center; gap: 0.5rem; color: var(--text-secondary);">
-                    <i data-lucide="users" style="color: var(--accent-orange);" aria-hidden="true"></i>
-                    <span>500+ Students</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main id="main-content">
 
-    <!-- ===== FILTER BUTTONS ===== -->
-    <section class="blog-filters-section">
-        <div class="container">
-            <div class="filter-buttons">
-                <button class="filter-btn active" data-filter="all">ALL</button>
-                <button class="filter-btn" data-filter="test-routes">TEST ROUTES</button>
-                <button class="filter-btn" data-filter="theory-help">THEORY HELP</button>
-                <button class="filter-btn" data-filter="local-news">LOCAL NEWS</button>
-                <button class="filter-btn" data-filter="pass-tips">PASS TIPS</button>
-                <button class="filter-btn" data-filter="instructor-guides">INSTRUCTOR GUIDES</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== BLOG POSTS GRID ===== -->
-    <section class="blog-posts-section">
-        <div class="container">
-            <div class="blog-grid">
-                <!-- ====== POST 1 – Chingford Test Routes ====== -->
-                <article class="blog-card" data-category="test-routes" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-07-11" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=600&h=400&fit=crop" alt="Chingford driving test route tips" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Test Routes</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JULY 11, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">How to Pass the Chingford Driving Test – Routes &amp; Tips</h3>
-                        <p class="blog-excerpt" itemprop="description">Master the challenging roundabouts and junctions at Chingford test centre with our expert guide. Learn the most common test routes used by examiners in Chingford.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 8 min read</span>
-                            <span><i data-lucide="map-pin" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> Chingford</span>
+        <!-- Hero -->
+        <section class="blog-hero" aria-labelledby="blog-heading">
+            <div class="container">
+                <div class="blog-hero-content">
+                    <h1 id="blog-heading" class="gradient-heading">Build Your Driving Confidence</h1>
+                    <p class="blog-subtitle">Expert tips, test routes, and learner guides from your Newham driving instructor. Master Chingford, Wanstead, Barking &amp; Goodmayes test centres.</p>
+                    
+                    <!-- Trust Indicators -->
+                    <div class="trust-indicators">
+                        <div class="trust-item">
+                            <i data-lucide="award" aria-hidden="true"></i>
+                            <span>DVSA Approved</span>
                         </div>
-                        <a href="blog/chingford-test-route-guide.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 2 – Barking Mistakes ====== -->
-                <article class="blog-card" data-category="pass-tips" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-07-08" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1517153702966-986c304cd9e1?w=600&h=400&fit=crop" alt="Common mistakes at Barking driving test" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Pass Tips</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JULY 8, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">Top 10 Mistakes Learners Make in Barking</h3>
-                        <p class="blog-excerpt" itemprop="description">Avoid these common errors that cost learners their test at Barking DVSA centre. Includes advice for the notorious A13 roundabout and Barking town centre.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 6 min read</span>
-                            <span><i data-lucide="map-pin" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> Barking</span>
+                        <div class="trust-item">
+                            <i data-lucide="star" aria-hidden="true"></i>
+                            <span>92% Pass Rate</span>
                         </div>
-                        <a href="blog/barking-common-mistakes.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 3 – Theory Test 2026 ====== -->
-                <article class="blog-card" data-category="theory-help" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-07-05" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?w=600&h=400&fit=crop" alt="UK theory test 2026 updates" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Theory Help</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JULY 5, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">Theory Test 2026 – What's Changed?</h3>
-                        <p class="blog-excerpt" itemprop="description">Stay updated with the latest DVSA changes to the UK theory test, including new question types, updated hazard perception scoring, and rule changes for 2026.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 10 min read</span>
+                        <div class="trust-item">
+                            <i data-lucide="users" aria-hidden="true"></i>
+                            <span>500+ Students</span>
                         </div>
-                        <a href="blog/theory-test-2026-changes.html" class="read-more" itemprop="url">Read More →</a>
                     </div>
-                </article>
-
-                <!-- ====== POST 4 – Stay Calm on Test ====== -->
-                <article class="blog-card" data-category="pass-tips" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-06-28" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop" alt="Stay calm during driving test" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Pass Tips</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JUNE 28, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">How to Stay Calm on Your Driving Test</h3>
-                        <p class="blog-excerpt" itemprop="description">Proven techniques to manage test anxiety and perform your best on the big day. Includes breathing exercises, visualisation, and what to do if you make a mistake.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 7 min read</span>
-                        </div>
-                        <a href="blog/stay-calm-driving-test.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 5 – Winter Driving Tips ====== -->
-                <article class="blog-card" data-category="instructor-guides" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-06-20" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=600&h=400&fit=crop" alt="Winter driving tips for new drivers" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Instructor Guides</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JUNE 20, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">Winter Driving Tips for New Drivers in Newham</h3>
-                        <p class="blog-excerpt" itemprop="description">Essential advice for safe driving in snow, ice, and poor visibility around Newham and East London. Learn how to check your car and adjust your driving style.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 9 min read</span>
-                            <span><i data-lucide="map-pin" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> Newham</span>
-                        </div>
-                        <a href="blog/winter-driving-tips.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 6 – Auto vs Manual ====== -->
-                <article class="blog-card" data-category="instructor-guides" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-06-15" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop" alt="Automatic vs manual car choice" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Instructor Guides</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JUNE 15, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">Automatic vs Manual – Which is Best for You?</h3>
-                        <p class="blog-excerpt" itemprop="description">Compare automatic and manual transmissions to choose the right learning path. Weigh the pros and cons for driving in urban areas like Stratford and Barking.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 8 min read</span>
-                        </div>
-                        <a href="blog/automatic-vs-manual.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 7 – Highway Code Changes ====== -->
-                <article class="blog-card" data-category="theory-help" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-06-10" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1558507658-2645dd06cc58?w=600&h=400&fit=crop" alt="Highway Code changes 2026" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Theory Help</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JUNE 10, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">Understanding the Highway Code – Key Changes</h3>
-                        <p class="blog-excerpt" itemprop="description">Navigate the updated Highway Code rules every driver needs to know, including new priority rules for pedestrians and cyclists.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 12 min read</span>
-                        </div>
-                        <a href="blog/highway-code-changes.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-
-                <!-- ====== POST 8 – First Driving Lesson ====== -->
-                <article class="blog-card" data-category="local-news" itemscope itemtype="https://schema.org/BlogPosting">
-                    <meta itemprop="datePublished" content="2026-06-01" />
-                    <meta itemprop="author" content="Newham Driving School" />
-                    <div class="blog-card-image">
-                        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop" alt="First driving lesson preparation" loading="lazy" itemprop="image" />
-                        <span class="category-badge gradient-text">Local News</span>
-                    </div>
-                    <div class="blog-card-content">
-                        <span class="blog-date">JUNE 1, 2026</span>
-                        <h3 class="blog-title gradient-text" itemprop="headline">What to Expect on Your First Driving Lesson in Newham</h3>
-                        <p class="blog-excerpt" itemprop="description">A complete guide to help you prepare for your very first lesson with confidence. What to bring, what happens, and how to get the most out of your initial session.</p>
-                        <div style="display: flex; gap: 1rem; font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">
-                            <span><i data-lucide="clock" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> 6 min read</span>
-                            <span><i data-lucide="map-pin" style="width: 14px; display: inline; vertical-align: middle;" aria-hidden="true"></i> Newham</span>
-                        </div>
-                        <a href="blog/first-driving-lesson.html" class="read-more" itemprop="url">Read More →</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA SECTION (ADDED) ===== -->
-    <section class="cta-section" style="padding: 4rem 1.5rem; text-align: center; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-primary));">
-        <div class="container">
-            <div style="max-width: 700px; margin: 0 auto; background: rgba(30, 41, 59, 0.6); backdrop-filter: blur(10px); padding: 3rem; border-radius: var(--radius-2xl); border: 1px solid var(--border-color);">
-                <h2 style="font-size: 2rem; margin-bottom: 1rem; background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Ready to Pass Your Test?</h2>
-                <p style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 2rem;">Join 500+ successful learners who passed first time with our expert instruction in Newham, Wanstead, Chingford, Barking & Goodmayes.</p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://wa.me/447983546733" class="btn btn-primary btn-large" style="display: inline-flex; align-items: center; gap: 0.5rem;">
-                        <i data-lucide="message-circle" aria-hidden="true"></i>
-                        Book on WhatsApp
-                    </a>
-                    <a href="pricing.html" class="btn btn-secondary btn-large">View Pricing</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
-    <button class="floating-whatsapp-btn" id="whatsappFloatBtn" aria-label="Contact on WhatsApp">
-        <i data-lucide="message-circle"></i>
-    </button>
+        <!-- Category Filters -->
+        <section class="blog-filters-section" aria-label="Filter blog posts by category">
+            <div class="container">
+                <div class="filter-buttons" role="group" aria-label="Blog categories">
+                    <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL</button>
+                    <button class="filter-btn" data-filter="test-routes" aria-pressed="false">TEST ROUTES</button>
+                    <button class="filter-btn" data-filter="theory-help" aria-pressed="false">THEORY HELP</button>
+                    <button class="filter-btn" data-filter="local-news" aria-pressed="false">LOCAL NEWS</button>
+                    <button class="filter-btn" data-filter="pass-tips" aria-pressed="false">PASS TIPS</button>
+                    <button class="filter-btn" data-filter="instructor-guides" aria-pressed="false">INSTRUCTOR GUIDES</button>
+                </div>
+            </div>
+        </section>
 
-    <!-- ===== BACK TO TOP BUTTON ===== -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i data-lucide="arrow-up"></i>
-    </button>
+        <!-- Blog Grid -->
+        <section class="blog-posts-section" aria-label="Blog articles">
+            <div class="container">
+                <div class="blog-grid" role="list">
+
+                    <!-- 1. Chingford Test Routes -->
+                    <article class="blog-card" data-category="test-routes" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop" 
+                                 alt="Chingford test centre routes with roundabouts and junctions" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Test Routes</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-07-11" itemprop="datePublished">JULY 11, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/chingford-test-routes.html" itemprop="url">How to Pass the Chingford Driving Test – Routes &amp; Tips</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Master the challenging roundabouts and junctions at Chingford test centre. Learn the exact routes, common fail spots, and insider tips from our experienced instructor.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 8 min read</span>
+                                <span><i data-lucide="map-pin" aria-hidden="true"></i> Chingford</span>
+                            </div>
+                            <a href="blog/chingford-test-routes.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-07-11">
+                    </article>
+
+                    <!-- 2. Barking Mistakes -->
+                    <article class="blog-card" data-category="pass-tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1517153702966-986c304cd9e1?w=600&h=400&fit=crop" 
+                                 alt="Learner driver avoiding common mistakes during driving test" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Pass Tips</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-07-08" itemprop="datePublished">JULY 8, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/barking-common-mistakes.html" itemprop="url">Top 10 Mistakes Learners Make in Barking</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Avoid these common errors that cost learners their test at Barking DVSA centre. Learn what examiners look for and how to avoid serious faults.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 6 min read</span>
+                                <span><i data-lucide="map-pin" aria-hidden="true"></i> Barking</span>
+                            </div>
+                            <a href="blog/barking-common-mistakes.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-07-08">
+                    </article>
+
+                    <!-- 3. Theory Test 2026 -->
+                    <article class="blog-card" data-category="theory-help" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?w=600&h=400&fit=crop" 
+                                 alt="Theory test preparation with Highway Code study materials" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Theory Help</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-07-05" itemprop="datePublished">JULY 5, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/theory-test-2026.html" itemprop="url">Theory Test 2026 – What's Changed?</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Stay updated with the latest changes to the UK theory test and hazard perception. New question types, scoring changes, and study tips.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 10 min read</span>
+                            </div>
+                            <a href="blog/theory-test-2026.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-07-05">
+                    </article>
+
+                    <!-- 4. Test Anxiety -->
+                    <article class="blog-card" data-category="pass-tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop" 
+                                 alt="Calm and confident learner driver during driving test" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Pass Tips</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-06-28" itemprop="datePublished">JUNE 28, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/test-anxiety-tips.html" itemprop="url">How to Stay Calm on Your Driving Test</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Proven techniques to manage test anxiety and perform your best on the big day. Breathing exercises, visualization, and confidence-building strategies.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 7 min read</span>
+                            </div>
+                            <a href="blog/test-anxiety-tips.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-06-28">
+                    </article>
+
+                    <!-- 5. Winter Driving -->
+                    <article class="blog-card" data-category="instructor-guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=600&h=400&fit=crop" 
+                                 alt="Winter driving conditions with snow and ice on roads" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Instructor Guides</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-06-20" itemprop="datePublished">JUNE 20, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/winter-driving-tips.html" itemprop="url">Winter Driving Tips for New Drivers</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Essential advice for safe driving in snow, ice, and poor visibility conditions. Learn skid control, braking techniques, and winter vehicle preparation.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 9 min read</span>
+                            </div>
+                            <a href="blog/winter-driving-tips.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-06-20">
+                    </article>
+
+                    <!-- 6. Auto vs Manual -->
+                    <article class="blog-card" data-category="instructor-guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop" 
+                                 alt="Automatic vs manual transmission comparison" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Instructor Guides</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-06-15" itemprop="datePublished">JUNE 15, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/automatic-vs-manual.html" itemprop="url">Automatic vs Manual – Which is Best for You?</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Compare automatic and manual transmissions to choose the right learning path. Pros, cons, costs, and which is easier to pass.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 8 min read</span>
+                            </div>
+                            <a href="blog/automatic-vs-manual.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-06-15">
+                    </article>
+
+                    <!-- 7. Highway Code Changes -->
+                    <article class="blog-card" data-category="theory-help" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1558507658-2645dd06cc58?w=600&h=400&fit=crop" 
+                                 alt="Highway Code book and road signs study guide" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Theory Help</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-06-10" itemprop="datePublished">JUNE 10, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/highway-code-updates.html" itemprop="url">Understanding the Highway Code – Key Changes</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">Navigate the updated Highway Code rules every driver needs to know. New hierarchy of road users, cycling provisions, and pedestrian priority.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 12 min read</span>
+                            </div>
+                            <a href="blog/highway-code-updates.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-06-10">
+                    </article>
+
+                    <!-- 8. First Lesson -->
+                    <article class="blog-card" data-category="local-news" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                        <div class="blog-card-image">
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop" 
+                                 alt="First driving lesson with instructor in Newham" 
+                                 loading="lazy"
+                                 itemprop="image">
+                            <span class="category-badge badge-gradient">Local News</span>
+                        </div>
+                        <div class="blog-card-content">
+                            <time class="blog-date" datetime="2026-06-01" itemprop="datePublished">JUNE 1, 2026</time>
+                            <h3 class="blog-title gradient-text" itemprop="headline">
+                                <a href="blog/first-lesson-what-to-expect.html" itemprop="url">What to Expect on Your First Driving Lesson</a>
+                            </h3>
+                            <p class="blog-excerpt" itemprop="description">A complete guide to help you prepare for your very first lesson with confidence. What to wear, what to bring, and what happens.</p>
+                            <div class="blog-meta">
+                                <span><i data-lucide="clock" aria-hidden="true"></i> 6 min read</span>
+                                <span><i data-lucide="map-pin" aria-hidden="true"></i> Newham</span>
+                            </div>
+                            <a href="blog/first-lesson-what-to-expect.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                        <meta itemprop="author" content="Newham Driving Instructor">
+                        <meta itemprop="dateModified" content="2026-06-01">
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Pass Your Test?</h2>
+                    <p>Join 500+ successful learners who passed first time with our expert instruction in Newham, Wanstead, Chingford, Barking &amp; Goodmayes.</p>
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <a href="https://wa.me/447983546733" class="btn btn-primary btn-large" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                            <i data-lucide="message-circle" aria-hidden="true"></i>
+                            Book on WhatsApp
+                        </a>
+                        <a href="pricing.html" class="btn btn-secondary btn-large">View Pricing</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer>
+    <footer class="footer" role="contentinfo">
         <div class="container footer-grid">
             <div class="footer-col">
-                <a href="index.html" class="logo"><i data-lucide="steering-wheel"></i>Newham Driving School</a>
-                <p>Expert driving instruction in Newham with specialised preparation for Wanstead, Chingford, Barking &amp; Goodmayes test centres.</p>
-                <div class="social-links">
-                    <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
-                    <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-                    <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
-                    <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+                <a href="index.html" class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--text-primary);">
+                    <i data-lucide="steering-wheel" aria-hidden="true"></i>
+                    Newham Driving
+                </a>
+                <p style="margin-top: 16px; font-size: 15px; color: var(--text-secondary);">Expert driving instruction in Newham. We master the exact test routes for your local test centre.</p>
+                <div class="social-links" style="margin-top: 20px; display: flex; gap: 16px;">
+                    <a href="#" aria-label="Facebook" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="facebook"></i></a>
+                    <a href="#" aria-label="Instagram" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="instagram"></i></a>
+                    <a href="#" aria-label="Twitter" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="twitter"></i></a>
+                    <a href="#" aria-label="YouTube" style="color: var(--text-secondary); transition: color 0.3s;"><i data-lucide="youtube"></i></a>
                 </div>
             </div>
             <div class="footer-col">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="areas.html">Areas Covered</a></li>
-                    <li><a href="test-centres.html">Test Centres</a></li>
-                    <li><a href="resources.html">Resources</a></li>
-                    <li><a href="blog.html">Blog</a></li>
+                <h4 style="color: var(--accent-orange);">Quick Links</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="index.html" style="color: var(--text-secondary);">Home</a></li>
+                    <li><a href="services.html" style="color: var(--text-secondary);">Services</a></li>
+                    <li><a href="pricing.html" style="color: var(--text-secondary);">Pricing</a></li>
+                    <li><a href="areas.html" style="color: var(--text-secondary);">Areas</a></li>
+                    <li><a href="test-centres.html" style="color: var(--text-secondary);">Test Centres</a></li>
+                    <li><a href="resources.html" style="color: var(--text-secondary);">Resources</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Test Centres</h4>
-                <ul>
-                    <li><a href="test-centres.html#wanstead">Wanstead</a></li>
-                    <li><a href="test-centres.html#chingford">Chingford</a></li>
-                    <li><a href="test-centres.html#barking">Barking</a></li>
-                    <li><a href="test-centres.html#goodmayes">Goodmayes</a></li>
+                <h4 style="color: var(--accent-orange);">Test Centres</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="test-centres.html#wanstead" style="color: var(--text-secondary);">Wanstead</a></li>
+                    <li><a href="test-centres.html#chingford" style="color: var(--text-secondary);">Chingford</a></li>
+                    <li><a href="test-centres.html#barking" style="color: var(--text-secondary);">Barking</a></li>
+                    <li><a href="test-centres.html#goodmayes" style="color: var(--text-secondary);">Goodmayes</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Contact</h4>
-                <ul>
-                    <li><a href="tel:07983546733"><i data-lucide="phone"></i>07983 546733</a></li>
-                    <li><a href="mailto:info@newhamdrivingschool.co.uk"><i data-lucide="mail"></i>info@newhamdrivingschool.co.uk</a></li>
-                    <li><a href="https://wa.me/447983546733"><i data-lucide="message-circle"></i>WhatsApp</a></li>
+                <h4 style="color: var(--accent-orange);">Contact</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="tel:07983546733" style="color: var(--text-secondary);"><i data-lucide="phone" aria-hidden="true"></i> 07983 546733</a></li>
+                    <li><a href="mailto:info@newhamdrivingschool.co.uk" style="color: var(--text-secondary);"><i data-lucide="mail" aria-hidden="true"></i> info@newhamdrivingschool.co.uk</a></li>
+                    <li><a href="https://wa.me/447983546733" style="color: var(--text-secondary);"><i data-lucide="message-circle" aria-hidden="true"></i> WhatsApp</a></li>
                 </ul>
             </div>
         </div>
@@ -411,75 +620,78 @@
         </div>
     </footer>
 
-    <!-- ===== SCRIPTS ===== -->
+    <!-- Floating WhatsApp Button -->
+    <button class="floating-whatsapp-btn" id="whatsappFloatBtn" aria-label="Contact on WhatsApp">
+        <i data-lucide="message-circle" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
     <script>
-        // Lucide icons
+        // Initialize Lucide
         lucide.createIcons();
 
-        document.addEventListener('DOMContentLoaded', function() {
-            // ===== BLOG FILTER =====
-            const filterBtns = document.querySelectorAll('.filter-btn');
-            const blogCards = document.querySelectorAll('.blog-card');
+        // Mobile menu toggle
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileClose = document.getElementById('mobileClose');
 
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', function() {
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
+        if (mobileToggle && mobileMenu) {
+            mobileToggle.addEventListener('click', () => {
+                mobileMenu.classList.add('active');
+                mobileToggle.setAttribute('aria-expanded', 'true');
+                mobileMenu.setAttribute('aria-hidden', 'false');
+            });
+        }
 
-                    const filter = this.getAttribute('data-filter');
+        if (mobileClose && mobileMenu) {
+            mobileClose.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+                mobileMenu.setAttribute('aria-hidden', 'true');
+            });
+        }
 
-                    blogCards.forEach(card => {
-                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                            card.style.display = 'block';
-                            setTimeout(() => {
-                                card.style.opacity = '1';
-                                card.style.transform = 'translateY(0)';
-                            }, 50);
-                        } else {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                card.style.display = 'none';
-                            }, 300);
-                        }
-                    });
+        // Blog filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const blogCards = document.querySelectorAll('.blog-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => {
+                    b.classList.remove('active');
+                    b.setAttribute('aria-pressed', 'false');
+                });
+                this.classList.add('active');
+                this.setAttribute('aria-pressed', 'true');
+
+                const filter = this.getAttribute('data-filter');
+                blogCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 300);
+                    }
                 });
             });
+        });
 
-            // ===== FLOATING WHATSAPP =====
-            document.getElementById('whatsappFloatBtn').addEventListener('click', function() {
-                window.open('https://wa.me/447983546733?text=Hi%2C%20I%20saw%20your%20blog%20and%20want%20to%20book%20driving%20lessons%20in%20Newham.', '_blank');
-            });
+        // Floating WhatsApp
+        document.getElementById('whatsappFloatBtn').addEventListener('click', () => {
+            window.open('https://wa.me/447983546733?text=Hi%2C%20I%20found%20your%20blog%20and%20want%20to%20book%20a%20driving%20lesson.', '_blank');
+        });
 
-            // ===== BACK TO TOP =====
-            const backToTop = document.getElementById('backToTop');
-            window.addEventListener('scroll', function() {
-                if (window.scrollY > 300) {
-                    backToTop.classList.add('show');
-                } else {
-                    backToTop.classList.remove('show');
-                }
-            });
-            backToTop.addEventListener('click', function() {
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-
-            // ===== MOBILE MENU (FIXED) =====
-            const menuBtn = document.querySelector('.mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobileMenu');
-            const mobileClose = document.getElementById('mobileClose');
-
-            if (menuBtn && mobileMenu) {
-                menuBtn.addEventListener('click', function() {
-                    mobileMenu.classList.add('active');
-                });
-            }
-
-            if (mobileClose && mobileMenu) {
-                mobileClose.addEventListener('click', function() {
-                    mobileMenu.classList.remove('active');
-                });
-            }
+        // Skip link
+        document.querySelector('.skip-to-content')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href'))?.focus();
         });
     </script>
 </body>
