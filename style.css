@@ -1,32 +1,37 @@
 /* ===================================
-   MODERN DRIVING SCHOOL DESIGN SYSTEM
-   Inspired by Blotato - Clean, Minimalist, Card-Based
+   BLOTATO DARK ELEGANT THEME
+   Modern Driving School Design System
    =================================== */
 
-/* CSS Variables for Consistent Theming */
+/* CSS Variables for Dark Elegant Theming */
 :root {
-    /* Color Palette - Professional Driving School Theme */
-    --primary-navy: #1e3a8a;
-    --primary-dark: #172554;
-    --secondary-white: #ffffff;
-    --background-light: #f8fafc;
-    --background-gray: #f1f5f9;
+    /* Color Palette - Blotato Dark & Elegant */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #1e293b;
+    --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    
     --accent-orange: #f97316;
     --accent-orange-hover: #ea580c;
     --accent-amber: #f59e0b;
-    --text-charcoal: #1f2937;
-    --text-gray: #4b5563;
-    --text-light: #6b7280;
-    --whatsapp-green: #25d366;
-    --whatsapp-dark: #1ebc57;
+    
+    --whatsapp-green: #22c55e;
+    --whatsapp-dark: #16a34a;
     --success-green: #10b981;
-    --border-color: #e2e8f0;
+    
+    --border-color: #334155;
+    --border-light: #475569;
     
     /* Shadows */
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.6), 0 10px 10px -5px rgba(0, 0, 0, 0.4);
+    --shadow-glow: 0 0 20px rgba(249, 115, 22, 0.3);
     
     /* Border Radius */
     --radius-sm: 0.375rem;
@@ -59,8 +64,8 @@ html {
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
     line-height: 1.7;
-    color: var(--text-charcoal);
-    background-color: var(--secondary-white);
+    color: var(--text-primary);
+    background: var(--bg-primary);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -69,7 +74,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 1.2;
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
@@ -81,7 +86,7 @@ h4 { font-size: clamp(1.1rem, 2vw, 1.25rem); }
 p {
     font-size: 1.125rem;
     line-height: 1.8;
-    color: var(--text-gray);
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
 }
 
@@ -105,17 +110,18 @@ img {
 }
 
 /* ===================================
-   HEADER - Modern Sticky Navigation
+   HEADER - Dark Sticky Navigation with Glass-morphism
    =================================== */
 header {
-    background: rgba(255, 255, 255, 0.98);
-    backdrop-filter: blur(10px);
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(12px);
     box-shadow: var(--shadow-md);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
     transition: all var(--transition-base);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header-content {
@@ -127,7 +133,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--primary-navy);
+    color: var(--text-primary);
     letter-spacing: -0.5px;
     transition: color var(--transition-base);
 }
@@ -143,7 +149,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: var(--text-charcoal);
+    color: var(--text-secondary);
     font-weight: 500;
     font-size: 0.95rem;
     padding: 0.5rem 0;
@@ -176,7 +182,7 @@ nav ul li a.active:after {
     display: none;
     background: none;
     border: none;
-    color: var(--primary-navy);
+    color: var(--text-primary);
     font-size: 1.5rem;
     cursor: pointer;
     padding: 0.5rem;
@@ -188,12 +194,12 @@ nav ul li a.active:after {
 }
 
 /* ===================================
-   HERO SECTION - Modern Gradient + Image
+   HERO SECTION - Dark Gradient + Image
    =================================== */
 .hero {
-    background: linear-gradient(135deg, rgba(30, 58, 138, 0.95) 0%, rgba(23, 37, 84, 0.9) 100%),
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.97) 0%, rgba(30, 41, 59, 0.95) 100%),
                 url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1920&h=1080&fit=crop') center/cover no-repeat;
-    color: var(--secondary-white);
+    color: var(--text-primary);
     padding: clamp(4rem, 10vw, 8rem) 1.5rem;
     text-align: center;
     position: relative;
@@ -207,7 +213,7 @@ nav ul li a.active:after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.3) 100%);
+    background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(0,0,0,0.4) 100%);
     pointer-events: none;
 }
 
@@ -219,17 +225,18 @@ nav ul li a.active:after {
 }
 
 .hero h1 {
-    color: var(--secondary-white);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
     font-weight: 800;
     letter-spacing: -1px;
     animation: fadeInUp 0.8s ease-out;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .hero .usp {
     font-size: clamp(1.1rem, 3vw, 1.4rem);
     font-weight: 600;
-    color: var(--accent-amber);
+    color: var(--accent-orange);
     max-width: 750px;
     margin: 0 auto 2.5rem;
     line-height: 1.6;
@@ -261,43 +268,46 @@ nav ul li a.active:after {
 
 .cta-button {
     background: var(--accent-orange);
-    color: var(--secondary-white);
+    color: var(--text-primary);
     box-shadow: var(--shadow-md);
 }
 
 .cta-button:hover {
     background: var(--accent-orange-hover);
     transform: translateY(-3px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
 }
 
 .cta-button.secondary {
-    background: var(--secondary-white);
-    color: var(--primary-navy);
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--border-color);
 }
 
 .cta-button.secondary:hover {
-    background: var(--background-light);
+    background: var(--bg-secondary);
+    border-color: var(--accent-orange);
 }
 
 .btn-book {
     width: 100%;
-    background: var(--primary-navy);
-    color: var(--secondary-white);
+    background: var(--accent-orange);
+    color: var(--text-primary);
     padding: 1rem;
 }
 
 .btn-book:hover {
-    background: var(--primary-dark);
+    background: var(--accent-orange-hover);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
 }
 
 .whatsapp-btn-large {
     background: var(--whatsapp-green);
-    color: var(--secondary-white);
+    color: var(--text-primary);
     padding: 1rem 2rem;
     border-radius: 50px;
+    box-shadow: var(--shadow-md);
 }
 
 .whatsapp-btn-large:hover {
@@ -314,7 +324,7 @@ section {
 }
 
 section:nth-child(even) {
-    background: var(--background-light);
+    background: var(--bg-secondary);
 }
 
 .section-header {
@@ -325,19 +335,24 @@ section:nth-child(even) {
 
 .section-header h2 {
     margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent-orange) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .section-subtitle {
     font-size: 1.125rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     line-height: 1.8;
 }
 
 /* ===================================
-   CARDS - Modern Card System
+   CARDS - Modern Card System with Glass-morphism
    =================================== */
 .card {
-    background: var(--secondary-white);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius-xl);
     padding: 2rem;
     box-shadow: var(--shadow-md);
@@ -360,13 +375,13 @@ section:nth-child(even) {
 }
 
 .card h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 1.4rem;
 }
 
 .card p {
-    color: var(--text-gray);
+    color: var(--text-secondary);
     font-size: 1rem;
     line-height: 1.7;
 }
@@ -380,17 +395,8 @@ section:nth-child(even) {
     padding: 0.5rem 0;
     padding-left: 2rem;
     position: relative;
-    color: var(--text-gray);
+    color: var(--text-secondary);
     font-size: 0.95rem;
-}
-
-.card ul li:before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: var(--success-green);
-    font-weight: 700;
-    font-size: 1.1rem;
 }
 
 /* Grid Systems */
@@ -422,7 +428,8 @@ section:nth-child(even) {
    PRICING CARDS - Enhanced Design
    =================================== */
 .pricing-card {
-    background: var(--secondary-white);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius-2xl);
     padding: 3rem 2rem;
     box-shadow: var(--shadow-lg);
@@ -439,7 +446,7 @@ section:nth-child(even) {
 
 .pricing-card.best-value {
     border-color: var(--accent-orange);
-    background: linear-gradient(135deg, #fff 0%, #fff7ed 100%);
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.9) 100%);
 }
 
 .pricing-card.best-value:before {
@@ -449,7 +456,7 @@ section:nth-child(even) {
     left: 50%;
     transform: translateX(-50%);
     background: var(--accent-orange);
-    color: var(--secondary-white);
+    color: var(--text-primary);
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
     font-size: 0.85rem;
@@ -459,14 +466,14 @@ section:nth-child(even) {
 }
 
 .pricing-card h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .pricing-card .price {
     font-size: 3rem;
-    color: var(--primary-navy);
+    color: var(--accent-orange);
     font-weight: 800;
     margin-bottom: 0.5rem;
     letter-spacing: -1px;
@@ -474,7 +481,7 @@ section:nth-child(even) {
 
 .pricing-card .price span {
     font-size: 1rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-weight: 400;
 }
 
@@ -487,7 +494,7 @@ section:nth-child(even) {
 }
 
 .pricing-card .savings {
-    background: rgba(16, 185, 129, 0.1);
+    background: rgba(16, 185, 129, 0.15);
     color: var(--success-green);
     padding: 0.5rem 1.25rem;
     border-radius: 50px;
@@ -506,7 +513,7 @@ section:nth-child(even) {
 .pricing-card ul li {
     padding: 0.75rem 0;
     border-bottom: 1px solid var(--border-color);
-    color: var(--text-gray);
+    color: var(--text-secondary);
     font-size: 0.95rem;
 }
 
@@ -518,7 +525,8 @@ section:nth-child(even) {
    TEST CENTRE SECTIONS
    =================================== */
 .test-centre-section {
-    background: var(--secondary-white);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
     border-radius: var(--radius-2xl);
     padding: 3rem;
     margin-bottom: 3rem;
@@ -533,13 +541,13 @@ section:nth-child(even) {
 }
 
 .test-centre-section h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
 }
 
 .test-centre-section .address {
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-style: italic;
     margin-bottom: 1.5rem;
     display: flex;
@@ -554,7 +562,7 @@ section:nth-child(even) {
     overflow: hidden;
     margin: 1.5rem 0;
     box-shadow: var(--shadow-md);
-    background: var(--background-gray);
+    background: var(--bg-secondary);
 }
 
 .map-container iframe,
@@ -574,7 +582,7 @@ section:nth-child(even) {
 }
 
 .preparation-info {
-    background: var(--background-light);
+    background: rgba(30, 41, 59, 0.5);
     padding: 2rem;
     border-radius: var(--radius-lg);
     margin-top: 2rem;
@@ -582,7 +590,7 @@ section:nth-child(even) {
 }
 
 .preparation-info h4 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1rem;
     font-size: 1.2rem;
 }
@@ -595,7 +603,7 @@ section:nth-child(even) {
     padding: 0.75rem 0;
     padding-left: 2.5rem;
     position: relative;
-    color: var(--text-gray);
+    color: var(--text-secondary);
 }
 
 .preparation-info ul li:before {
@@ -617,8 +625,8 @@ section:nth-child(even) {
 }
 
 .area-item {
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-dark) 100%);
-    color: var(--secondary-white);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    color: var(--text-primary);
     padding: 1.5rem;
     border-radius: var(--radius-lg);
     text-align: center;
@@ -626,16 +634,18 @@ section:nth-child(even) {
     font-size: 1.1rem;
     transition: all var(--transition-base);
     box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
 }
 
 .area-item:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-xl);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
     background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-hover) 100%);
+    border-color: transparent;
 }
 
 .pickup-info {
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
     padding: 2.5rem;
     border-radius: var(--radius-xl);
     max-width: 800px;
@@ -645,7 +655,7 @@ section:nth-child(even) {
 }
 
 .pickup-info h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
@@ -664,15 +674,16 @@ section:nth-child(even) {
 .instructor-photo {
     width: 100%;
     aspect-ratio: 4/5;
-    background: linear-gradient(135deg, #e2e8f0 0%, #cbd5e1 100%);
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
     border-radius: var(--radius-2xl);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--text-light);
+    color: var(--text-secondary);
     font-size: 1.2rem;
     box-shadow: var(--shadow-lg);
     overflow: hidden;
+    border: 1px solid var(--border-color);
 }
 
 .instructor-photo img {
@@ -686,7 +697,7 @@ section:nth-child(even) {
 }
 
 .qualifications h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
 }
 
@@ -698,7 +709,7 @@ section:nth-child(even) {
     padding: 0.75rem 0;
     padding-left: 2.5rem;
     position: relative;
-    color: var(--text-gray);
+    color: var(--text-secondary);
 }
 
 .qualifications ul li:before {
@@ -711,7 +722,8 @@ section:nth-child(even) {
 }
 
 .car-details {
-    background: var(--background-light);
+    background: rgba(30, 41, 59, 0.6);
+    backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: var(--radius-lg);
     margin-top: 2rem;
@@ -719,7 +731,7 @@ section:nth-child(even) {
 }
 
 .car-details h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1rem;
 }
 
@@ -729,7 +741,7 @@ section:nth-child(even) {
 
 .car-details ul li {
     padding: 0.5rem 0;
-    color: var(--text-gray);
+    color: var(--text-secondary);
     padding-left: 1.5rem;
     position: relative;
 }
@@ -754,7 +766,8 @@ section:nth-child(even) {
 }
 
 .contact-info {
-    background: var(--background-light);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
     padding: 3rem;
     border-radius: var(--radius-2xl);
     border: 1px solid var(--border-color);
@@ -769,12 +782,12 @@ section:nth-child(even) {
 .contact-item-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-dark) 100%);
+    background: linear-gradient(135deg, var(--accent-orange) 0%, var(--accent-orange-hover) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--secondary-white);
+    color: var(--text-primary);
     font-size: 1.5rem;
     margin-right: 1.25rem;
     flex-shrink: 0;
@@ -782,19 +795,20 @@ section:nth-child(even) {
 }
 
 .contact-item-text h4 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
     font-size: 1.1rem;
 }
 
 .contact-item-text p {
-    color: var(--text-gray);
+    color: var(--text-secondary);
     margin: 0;
     font-size: 1rem;
 }
 
 .contact-form {
-    background: var(--secondary-white);
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
     padding: 3rem;
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-lg);
@@ -808,7 +822,7 @@ section:nth-child(even) {
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--primary-navy);
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 0.95rem;
 }
@@ -823,15 +837,16 @@ section:nth-child(even) {
     font-size: 1rem;
     font-family: inherit;
     transition: all var(--transition-fast);
-    background: var(--secondary-white);
+    background: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-navy);
-    box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
 }
 
 .form-group textarea {
@@ -841,25 +856,26 @@ section:nth-child(even) {
 
 .submit-btn {
     width: 100%;
-    background: var(--primary-navy);
-    color: var(--secondary-white);
+    background: var(--accent-orange);
+    color: var(--text-primary);
     padding: 1rem;
     font-size: 1.05rem;
 }
 
 .submit-btn:hover {
-    background: var(--primary-dark);
+    background: var(--accent-orange-hover);
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow-lg), var(--shadow-glow);
 }
 
 /* ===================================
-   FOOTER - Modern Clean Design
+   FOOTER - Dark Modern Design
    =================================== */
 footer {
-    background: var(--primary-navy);
-    color: var(--secondary-white);
+    background: var(--bg-primary);
+    color: var(--text-secondary);
     padding: 4rem 1.5rem 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .footer-content {
@@ -871,14 +887,14 @@ footer {
 }
 
 .footer-section h4 {
-    color: var(--accent-amber);
+    color: var(--accent-orange);
     margin-bottom: 1.5rem;
     font-size: 1.15rem;
 }
 
 .footer-section p,
 .footer-section a {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
     line-height: 2;
     font-size: 0.95rem;
 }
@@ -896,10 +912,10 @@ footer {
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid var(--border-color);
     padding-top: 2rem;
     text-align: center;
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
 }
 
 .legal-links {
@@ -911,7 +927,7 @@ footer {
 }
 
 .legal-links a {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--text-muted);
     font-size: 0.9rem;
     transition: color var(--transition-base);
 }
@@ -921,7 +937,7 @@ footer {
 }
 
 /* ===================================
-   MODAL - Modern Overlay
+   MODAL - Dark Modern Overlay
    =================================== */
 .modal {
     display: none;
@@ -930,8 +946,8 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
     z-index: 2000;
     align-items: center;
     justify-content: center;
@@ -945,7 +961,7 @@ footer {
 }
 
 .modal-content {
-    background: var(--secondary-white);
+    background: var(--bg-secondary);
     padding: 3rem;
     border-radius: var(--radius-2xl);
     max-width: 500px;
@@ -954,6 +970,7 @@ footer {
     box-shadow: var(--shadow-xl);
     transform: translateY(-20px);
     transition: transform var(--transition-base);
+    border: 1px solid var(--border-color);
 }
 
 .modal.active .modal-content {
@@ -966,7 +983,7 @@ footer {
     right: 1.25rem;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--text-light);
+    color: var(--text-secondary);
     transition: color var(--transition-fast);
     background: none;
     border: none;
@@ -974,11 +991,11 @@ footer {
 }
 
 .modal-close:hover {
-    color: var(--primary-navy);
+    color: var(--accent-orange);
 }
 
 .modal h3 {
-    color: var(--primary-navy);
+    color: var(--text-primary);
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -990,7 +1007,7 @@ footer {
 .modal-options label {
     display: block;
     margin-bottom: 0.5rem;
-    color: var(--primary-navy);
+    color: var(--text-primary);
     font-weight: 600;
     font-size: 0.95rem;
 }
@@ -1001,26 +1018,135 @@ footer {
     border: 2px solid var(--border-color);
     border-radius: var(--radius-md);
     font-size: 1rem;
-    background: var(--secondary-white);
+    background: var(--bg-primary);
+    color: var(--text-primary);
     cursor: pointer;
     transition: border-color var(--transition-fast);
 }
 
 .modal-options select:focus {
     outline: none;
-    border-color: var(--primary-navy);
+    border-color: var(--accent-orange);
 }
 
 .modal-btn {
     width: 100%;
     background: var(--whatsapp-green);
-    color: var(--secondary-white);
+    color: var(--text-primary);
     padding: 1rem;
     margin-top: 1rem;
 }
 
 .modal-btn:hover {
     background: var(--whatsapp-dark);
+}
+
+/* ===================================
+   WHATSAPP MODAL - Multi-step Form
+   =================================== */
+#whatsapp-modal .modal-content {
+    max-width: 550px;
+}
+
+#whatsapp-modal .modal-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#whatsapp-modal .modal-header h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+#whatsapp-modal .modal-header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.form-step {
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.3s ease-out;
+}
+
+.form-step label {
+    display: block;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.form-step input,
+.form-step select {
+    width: 100%;
+    padding: 1rem 1.25rem;
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: 1rem;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: all var(--transition-fast);
+}
+
+.form-step input:focus,
+.form-step select:focus {
+    outline: none;
+    border-color: var(--accent-orange);
+    box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.2);
+}
+
+.btn-whatsapp {
+    width: 100%;
+    background: var(--whatsapp-green);
+    color: var(--text-primary);
+    padding: 1rem 2rem;
+    border-radius: var(--radius-xl);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-whatsapp:hover {
+    background: var(--whatsapp-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 60px;
+    height: 60px;
+    background: var(--whatsapp-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    z-index: 999;
+    transition: all var(--transition-base);
+    border: none;
+}
+
+.floating-whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-xl), var(--shadow-glow);
+}
+
+.floating-whatsapp-btn svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
 }
 
 /* ===================================
@@ -1079,7 +1205,7 @@ footer {
         top: 100%;
         left: 0;
         width: 100%;
-        background: var(--secondary-white);
+        background: var(--bg-secondary);
         flex-direction: column;
         padding: 1.5rem;
         gap: 1rem;
@@ -1098,7 +1224,7 @@ footer {
     }
     
     nav ul li a:hover {
-        background: var(--background-light);
+        background: var(--bg-primary);
     }
     
     .mobile-menu-btn {
@@ -1329,7 +1455,7 @@ footer {
 .quiz-feedback p { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
 .quiz-source {
     font-size: 14px;
-    color: var(--text-light);
+    color: var(--text-muted);
     font-style: italic;
     margin-top: 16px;
     padding-top: 16px;
