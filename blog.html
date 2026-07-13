@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- Primary SEO Meta Tags -->
     <title>Driving Blog | Expert Tips, Test Routes & Learner Guides - Newham Driving School</title>
     <meta name="description" content="Expert driving tips, test routes for Chingford, Wanstead, Barking & Goodmayes, theory test help, and learner guides. Pass your driving test first time with Newham's top-rated instructor.">
     <meta name="keywords" content="driving blog, Newham driving tips, Chingford test routes, Wanstead driving test, Barking test centre tips, Goodmayes driving lessons, theory test help, learner driver guides, pass first time">
@@ -24,7 +23,6 @@
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="en_GB">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://imsal007.github.io/Newham-Driving-Lessons/blog.html">
     <meta name="twitter:title" content="Driving Blog | Expert Tips, Test Routes & Learner Guides">
@@ -32,50 +30,150 @@
     <meta name="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&h=630&fit=crop">
     <meta name="twitter:creator" content="@NewhamDriving">
     
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     
-    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://images.unsplash.com">
     
-    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Lucide Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
-    <!-- Additional in-page styles to complement the theme -->
+
     <style>
-        /* Extend the Blotato theme for blog-specific elements */
-        .badge-gradient {
-            background: linear-gradient(135deg, var(--accent-orange), var(--accent-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            font-weight: 700;
+        /* ===== FIXES FOR BLOG PAGE ===== */
+        
+        /* Hide skip link by default – show only on focus */
+        .skip-to-content {
+            position: absolute;
+            top: -100%;
+            left: 0;
+            padding: 1rem 2rem;
+            background: var(--accent-orange);
+            color: #fff;
+            z-index: 9999;
+            text-decoration: none;
+            font-weight: 600;
+            transition: top 0.2s;
+        }
+        .skip-to-content:focus {
+            top: 0;
         }
 
+        /* Blog card image – ensure it always shows */
+        .blog-card-image {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            background: var(--bg-secondary); /* fallback if image fails */
+        }
+        .blog-card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+        .blog-card:hover .blog-card-image img {
+            transform: scale(1.05);
+        }
+
+        /* Category badge – shorter text & better fit */
+        .category-badge {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            padding: 0.35rem 0.9rem;
+            background: rgba(0, 0, 0, 0.75);
+            backdrop-filter: blur(4px);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            color: var(--text-primary);
+            line-height: 1.2;
+        }
+        /* Override gradient-text from main style – we want solid white on dark background */
+        .category-badge.gradient-text {
+            -webkit-text-fill-color: white;
+            background: rgba(0, 0, 0, 0.75);
+        }
+
+        /* Blog card content – tighter spacing */
+        .blog-card-content {
+            padding: 1.25rem 1.5rem 1.5rem;
+        }
+        .blog-date {
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+        .blog-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            line-height: 1.3;
+            margin: 0.5rem 0 0.5rem;
+        }
+        .blog-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .blog-title a:hover {
+            color: var(--accent-orange);
+        }
+
+        /* Excerpt – clamp to 2 lines */
+        .blog-excerpt {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: var(--text-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0.75rem;
+            max-height: 2.7rem; /* fallback */
+        }
+
+        /* Blog meta – icons and location */
         .blog-meta {
             display: flex;
             gap: 1rem;
-            margin-top: 1rem;
-            font-size: 0.875rem;
+            font-size: 0.8rem;
             color: var(--text-muted);
+            flex-wrap: wrap;
         }
-
         .blog-meta i {
             width: 14px;
             height: 14px;
             display: inline;
             vertical-align: middle;
+            margin-right: 2px;
         }
 
+        /* Read More button – smaller and inline */
+        .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            margin-top: 0.75rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--accent-orange);
+            text-decoration: none;
+            transition: gap 0.2s;
+        }
+        .read-more:hover {
+            gap: 8px;
+            color: var(--accent-orange-hover);
+        }
+
+        /* Trust indicators */
         .trust-indicators {
             display: flex;
             gap: 2rem;
@@ -83,24 +181,23 @@
             margin-top: 2rem;
             flex-wrap: wrap;
         }
-
         .trust-item {
             display: flex;
             align-items: center;
             gap: 0.5rem;
             color: var(--text-secondary);
+            font-size: 0.95rem;
         }
-
         .trust-item i {
             color: var(--accent-orange);
         }
 
+        /* CTA section */
         .cta-section {
             padding: 4rem 1.5rem;
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
             text-align: center;
         }
-
         .cta-content {
             max-width: 700px;
             margin: 0 auto;
@@ -110,7 +207,6 @@
             border-radius: var(--radius-2xl);
             border: 1px solid var(--border-color);
         }
-
         .cta-content h2 {
             font-size: 2rem;
             font-weight: 700;
@@ -119,15 +215,34 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .cta-content p {
             font-size: 1.125rem;
             color: var(--text-secondary);
             margin-bottom: 2rem;
         }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .blog-card-image {
+                height: 160px;
+            }
+            .blog-title {
+                font-size: 1rem;
+            }
+            .blog-excerpt {
+                font-size: 0.85rem;
+                -webkit-line-clamp: 2;
+            }
+            .trust-indicators {
+                gap: 1rem;
+            }
+            .cta-content {
+                padding: 2rem;
+            }
+        }
     </style>
 
-    <!-- Structured Data – Blog & FAQ (all 8 posts) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -205,7 +320,7 @@
     }
     </script>
 
-    <!-- FAQ Schema (for AEO) -->
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -240,9 +355,9 @@
     </script>
 </head>
 <body>
-    <!-- Skip to content -->
+    <!-- Skip link – hidden by default, visible on focus -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
-    
+
     <!-- ===== HEADER ===== -->
     <header class="header" role="banner">
         <div class="container header-container">
@@ -250,11 +365,9 @@
                 <i data-lucide="steering-wheel" aria-hidden="true"></i>
                 <span>Newham<br><strong>Driving</strong></span>
             </a>
-            
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
                 <i data-lucide="menu" aria-hidden="true"></i>
             </button>
-            
             <nav class="nav-menu" id="navMenu" role="navigation" aria-label="Main navigation">
                 <a href="index.html">Home</a>
                 <a href="services.html">Services</a>
@@ -306,36 +419,25 @@
                 <div class="blog-hero-content">
                     <h1 id="blog-heading" class="gradient-heading">Build Your Driving Confidence</h1>
                     <p class="blog-subtitle">Expert tips, test routes, and learner guides from your Newham driving instructor. Master Chingford, Wanstead, Barking &amp; Goodmayes test centres.</p>
-                    
-                    <!-- Trust Indicators -->
                     <div class="trust-indicators">
-                        <div class="trust-item">
-                            <i data-lucide="award" aria-hidden="true"></i>
-                            <span>DVSA Approved</span>
-                        </div>
-                        <div class="trust-item">
-                            <i data-lucide="star" aria-hidden="true"></i>
-                            <span>92% Pass Rate</span>
-                        </div>
-                        <div class="trust-item">
-                            <i data-lucide="users" aria-hidden="true"></i>
-                            <span>500+ Students</span>
-                        </div>
+                        <div class="trust-item"><i data-lucide="award" aria-hidden="true"></i><span>DVSA Approved</span></div>
+                        <div class="trust-item"><i data-lucide="star" aria-hidden="true"></i><span>92% Pass Rate</span></div>
+                        <div class="trust-item"><i data-lucide="users" aria-hidden="true"></i><span>500+ Students</span></div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Category Filters -->
+        <!-- Filters -->
         <section class="blog-filters-section" aria-label="Filter blog posts by category">
             <div class="container">
                 <div class="filter-buttons" role="group" aria-label="Blog categories">
                     <button class="filter-btn active" data-filter="all" aria-pressed="true">ALL</button>
-                    <button class="filter-btn" data-filter="test-routes" aria-pressed="false">TEST ROUTES</button>
-                    <button class="filter-btn" data-filter="theory-help" aria-pressed="false">THEORY HELP</button>
-                    <button class="filter-btn" data-filter="local-news" aria-pressed="false">LOCAL NEWS</button>
-                    <button class="filter-btn" data-filter="pass-tips" aria-pressed="false">PASS TIPS</button>
-                    <button class="filter-btn" data-filter="instructor-guides" aria-pressed="false">INSTRUCTOR GUIDES</button>
+                    <button class="filter-btn" data-filter="routes" aria-pressed="false">ROUTES</button>
+                    <button class="filter-btn" data-filter="theory" aria-pressed="false">THEORY</button>
+                    <button class="filter-btn" data-filter="local" aria-pressed="false">LOCAL</button>
+                    <button class="filter-btn" data-filter="tips" aria-pressed="false">TIPS</button>
+                    <button class="filter-btn" data-filter="guides" aria-pressed="false">GUIDES</button>
                 </div>
             </div>
         </section>
@@ -346,17 +448,17 @@
                 <div class="blog-grid" role="list">
 
                     <!-- 1. Chingford Test Routes -->
-                    <article class="blog-card" data-category="test-routes" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="routes" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&h=400&fit=crop&crop=center" 
                                  alt="Chingford test centre routes with roundabouts and junctions" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Test Routes</span>
+                            <span class="category-badge gradient-text">Routes</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-07-11" itemprop="datePublished">JULY 11, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/chingford-test-routes.html" itemprop="url">How to Pass the Chingford Driving Test – Routes &amp; Tips</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Master the challenging roundabouts and junctions at Chingford test centre. Learn the exact routes, common fail spots, and insider tips from our experienced instructor.</p>
@@ -364,24 +466,24 @@
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 8 min read</span>
                                 <span><i data-lucide="map-pin" aria-hidden="true"></i> Chingford</span>
                             </div>
-                            <a href="blog/chingford-test-routes.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/chingford-test-routes.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-07-11">
                     </article>
 
                     <!-- 2. Barking Mistakes -->
-                    <article class="blog-card" data-category="pass-tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1517153702966-986c304cd9e1?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1498887960847-2a5e46312788?w=600&h=400&fit=crop&crop=center" 
                                  alt="Learner driver avoiding common mistakes during driving test" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Pass Tips</span>
+                            <span class="category-badge gradient-text">Tips</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-07-08" itemprop="datePublished">JULY 8, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/barking-common-mistakes.html" itemprop="url">Top 10 Mistakes Learners Make in Barking</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Avoid these common errors that cost learners their test at Barking DVSA centre. Learn what examiners look for and how to avoid serious faults.</p>
@@ -389,152 +491,152 @@
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 6 min read</span>
                                 <span><i data-lucide="map-pin" aria-hidden="true"></i> Barking</span>
                             </div>
-                            <a href="blog/barking-common-mistakes.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/barking-common-mistakes.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-07-08">
                     </article>
 
                     <!-- 3. Theory Test 2026 -->
-                    <article class="blog-card" data-category="theory-help" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="theory" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1516934024742-b461fba47600?w=600&h=400&fit=crop&crop=center" 
                                  alt="Theory test preparation with Highway Code study materials" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Theory Help</span>
+                            <span class="category-badge gradient-text">Theory</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-07-05" itemprop="datePublished">JULY 5, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/theory-test-2026.html" itemprop="url">Theory Test 2026 – What's Changed?</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Stay updated with the latest changes to the UK theory test and hazard perception. New question types, scoring changes, and study tips.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 10 min read</span>
                             </div>
-                            <a href="blog/theory-test-2026.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/theory-test-2026.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-07-05">
                     </article>
 
                     <!-- 4. Test Anxiety -->
-                    <article class="blog-card" data-category="pass-tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="tips" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=600&h=400&fit=crop&crop=center" 
                                  alt="Calm and confident learner driver during driving test" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Pass Tips</span>
+                            <span class="category-badge gradient-text">Tips</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-06-28" itemprop="datePublished">JUNE 28, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/test-anxiety-tips.html" itemprop="url">How to Stay Calm on Your Driving Test</a>
                             </h3>
-                            <p class="blog-excerpt" itemprop="description">Proven techniques to manage test anxiety and perform your best on the big day. Breathing exercises, visualization, and confidence-building strategies.</p>
+                            <p class="blog-excerpt" itemprop="description">Proven techniques to manage test anxiety and perform your best on the big day. Breathing exercises, visualisation, and confidence-building strategies.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 7 min read</span>
                             </div>
-                            <a href="blog/test-anxiety-tips.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/test-anxiety-tips.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-06-28">
                     </article>
 
                     <!-- 5. Winter Driving -->
-                    <article class="blog-card" data-category="instructor-guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1485291571150-772bcfc10da5?w=600&h=400&fit=crop&crop=center" 
                                  alt="Winter driving conditions with snow and ice on roads" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Instructor Guides</span>
+                            <span class="category-badge gradient-text">Guides</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-06-20" itemprop="datePublished">JUNE 20, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/winter-driving-tips.html" itemprop="url">Winter Driving Tips for New Drivers</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Essential advice for safe driving in snow, ice, and poor visibility conditions. Learn skid control, braking techniques, and winter vehicle preparation.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 9 min read</span>
                             </div>
-                            <a href="blog/winter-driving-tips.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/winter-driving-tips.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-06-20">
                     </article>
 
                     <!-- 6. Auto vs Manual -->
-                    <article class="blog-card" data-category="instructor-guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="guides" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop&crop=center" 
                                  alt="Automatic vs manual transmission comparison" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Instructor Guides</span>
+                            <span class="category-badge gradient-text">Guides</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-06-15" itemprop="datePublished">JUNE 15, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/automatic-vs-manual.html" itemprop="url">Automatic vs Manual – Which is Best for You?</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Compare automatic and manual transmissions to choose the right learning path. Pros, cons, costs, and which is easier to pass.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 8 min read</span>
                             </div>
-                            <a href="blog/automatic-vs-manual.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/automatic-vs-manual.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-06-15">
                     </article>
 
                     <!-- 7. Highway Code Changes -->
-                    <article class="blog-card" data-category="theory-help" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="theory" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1558507658-2645dd06cc58?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1558507658-2645dd06cc58?w=600&h=400&fit=crop&crop=center" 
                                  alt="Highway Code book and road signs study guide" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Theory Help</span>
+                            <span class="category-badge gradient-text">Theory</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-06-10" itemprop="datePublished">JUNE 10, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
+                            <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/highway-code-updates.html" itemprop="url">Understanding the Highway Code – Key Changes</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">Navigate the updated Highway Code rules every driver needs to know. New hierarchy of road users, cycling provisions, and pedestrian priority.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 12 min read</span>
                             </div>
-                            <a href="blog/highway-code-updates.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/highway-code-updates.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-06-10">
                     </article>
 
                     <!-- 8. First Lesson -->
-                    <article class="blog-card" data-category="local-news" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
+                    <article class="blog-card" data-category="local" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop" 
+                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop&crop=center" 
                                  alt="First driving lesson with instructor in Newham" 
                                  loading="lazy"
                                  itemprop="image">
-                            <span class="category-badge badge-gradient">Local News</span>
+                            <span class="category-badge gradient-text">Local</span>
                         </div>
                         <div class="blog-card-content">
                             <time class="blog-date" datetime="2026-06-01" itemprop="datePublished">JUNE 1, 2026</time>
-                            <h3 class="blog-title gradient-text" itemprop="headline">
-                                <a href="blog/first-lesson-what-to-expect.html" itemprop="url">What to Expect on Your First Driving Lesson</a>
+                            <h3 class="blog-title" itemprop="headline">
+                                <a href="blog/first-lesson-what-to-expect.html" itemprop="url">What to Expect on Your First Driving Lesson in Newham</a>
                             </h3>
                             <p class="blog-excerpt" itemprop="description">A complete guide to help you prepare for your very first lesson with confidence. What to wear, what to bring, and what happens.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 6 min read</span>
                                 <span><i data-lucide="map-pin" aria-hidden="true"></i> Newham</span>
                             </div>
-                            <a href="blog/first-lesson-what-to-expect.html" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
+                            <a href="blog/first-lesson-what-to-expect.html" class="read-more" itemprop="url">Read More <i data-lucide="arrow-right" aria-hidden="true"></i></a>
                         </div>
                         <meta itemprop="author" content="Newham Driving Instructor">
                         <meta itemprop="dateModified" content="2026-06-01">
@@ -544,7 +646,7 @@
             </div>
         </section>
 
-        <!-- Call to Action -->
+        <!-- CTA -->
         <section class="cta-section">
             <div class="container">
                 <div class="cta-content">
@@ -620,17 +722,16 @@
         </div>
     </footer>
 
-    <!-- Floating WhatsApp Button -->
+    <!-- Floating WhatsApp -->
     <button class="floating-whatsapp-btn" id="whatsappFloatBtn" aria-label="Contact on WhatsApp">
         <i data-lucide="message-circle" aria-hidden="true"></i>
     </button>
 
     <script src="script.js"></script>
     <script>
-        // Initialize Lucide
         lucide.createIcons();
 
-        // Mobile menu toggle
+        // Mobile menu
         const mobileToggle = document.getElementById('mobileToggle');
         const mobileMenu = document.getElementById('mobileMenu');
         const mobileClose = document.getElementById('mobileClose');
@@ -642,7 +743,6 @@
                 mobileMenu.setAttribute('aria-hidden', 'false');
             });
         }
-
         if (mobileClose && mobileMenu) {
             mobileClose.addEventListener('click', () => {
                 mobileMenu.classList.remove('active');
@@ -651,7 +751,7 @@
             });
         }
 
-        // Blog filter
+        // Blog filter (updated categories)
         const filterBtns = document.querySelectorAll('.filter-btn');
         const blogCards = document.querySelectorAll('.blog-card');
 
@@ -683,7 +783,7 @@
             });
         });
 
-        // Floating WhatsApp
+        // WhatsApp
         document.getElementById('whatsappFloatBtn').addEventListener('click', () => {
             window.open('https://wa.me/447983546733?text=Hi%2C%20I%20found%20your%20blog%20and%20want%20to%20book%20a%20driving%20lesson.', '_blank');
         });
