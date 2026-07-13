@@ -43,8 +43,6 @@
 
     <style>
         /* ===== FIXES FOR BLOG PAGE ===== */
-        
-        /* Hide skip link by default – show only on focus */
         .skip-to-content {
             position: absolute;
             top: -100%;
@@ -61,12 +59,11 @@
             top: 0;
         }
 
-        /* Blog card image – ensure it always shows */
         .blog-card-image {
             position: relative;
             height: 200px;
             overflow: hidden;
-            background: var(--bg-secondary); /* fallback if image fails */
+            background: var(--bg-secondary);
         }
         .blog-card-image img {
             width: 100%;
@@ -79,7 +76,6 @@
             transform: scale(1.05);
         }
 
-        /* Category badge – shorter text & better fit */
         .category-badge {
             position: absolute;
             top: 1rem;
@@ -95,13 +91,11 @@
             color: var(--text-primary);
             line-height: 1.2;
         }
-        /* Override gradient-text from main style – we want solid white on dark background */
         .category-badge.gradient-text {
             -webkit-text-fill-color: white;
             background: rgba(0, 0, 0, 0.75);
         }
 
-        /* Blog card content – tighter spacing */
         .blog-card-content {
             padding: 1.25rem 1.5rem 1.5rem;
         }
@@ -126,7 +120,6 @@
             color: var(--accent-orange);
         }
 
-        /* Excerpt – clamp to 2 lines */
         .blog-excerpt {
             font-size: 0.9rem;
             line-height: 1.5;
@@ -137,10 +130,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
             margin-bottom: 0.75rem;
-            max-height: 2.7rem; /* fallback */
+            max-height: 2.7rem;
         }
 
-        /* Blog meta – icons and location */
         .blog-meta {
             display: flex;
             gap: 1rem;
@@ -156,7 +148,6 @@
             margin-right: 2px;
         }
 
-        /* Read More button – smaller and inline */
         .read-more {
             display: inline-flex;
             align-items: center;
@@ -173,7 +164,6 @@
             color: var(--accent-orange-hover);
         }
 
-        /* Trust indicators */
         .trust-indicators {
             display: flex;
             gap: 2rem;
@@ -192,7 +182,6 @@
             color: var(--accent-orange);
         }
 
-        /* CTA section */
         .cta-section {
             padding: 4rem 1.5rem;
             background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
@@ -221,7 +210,6 @@
             margin-bottom: 2rem;
         }
 
-        /* Responsive tweaks */
         @media (max-width: 768px) {
             .blog-card-image {
                 height: 160px;
@@ -311,7 +299,7 @@
             },
             {
                 "@type": "BlogPosting",
-                "headline": "What to Expect on Your First Driving Lesson",
+                "headline": "What to Expect on Your First Driving Lesson in Newham",
                 "description": "A complete guide to help you prepare for your very first lesson with confidence",
                 "datePublished": "2026-06-01",
                 "author": { "@type": "Person", "name": "Newham Driving Instructor" }
@@ -355,10 +343,8 @@
     </script>
 </head>
 <body>
-    <!-- Skip link – hidden by default, visible on focus -->
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <!-- ===== HEADER ===== -->
     <header class="header" role="banner">
         <div class="container header-container">
             <a href="index.html" class="logo" aria-label="Newham Driving School Home">
@@ -386,7 +372,6 @@
         </div>
     </header>
 
-    <!-- ===== MOBILE MENU ===== -->
     <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Mobile navigation" aria-hidden="true">
         <div class="mobile-menu-header">
             <a href="index.html" class="logo">
@@ -410,7 +395,6 @@
         </nav>
     </div>
 
-    <!-- ===== MAIN CONTENT ===== -->
     <main id="main-content">
 
         <!-- Hero -->
@@ -593,11 +577,11 @@
                         <meta itemprop="dateModified" content="2026-06-15">
                     </article>
 
-                    <!-- 7. Highway Code Changes -->
+                    <!-- 7. Highway Code Changes (FIXED) -->
                     <article class="blog-card" data-category="theory" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1558507658-2645dd06cc58?w=600&h=400&fit=crop&crop=center" 
-                                 alt="Highway Code book and road signs study guide" 
+                            <img src="https://images.unsplash.com/photo-1589829085413-4e5f4e95f3b7?w=600&h=400&fit=crop&crop=center" 
+                                 alt="Highway Code book and road signs" 
                                  loading="lazy"
                                  itemprop="image">
                             <span class="category-badge gradient-text">Theory</span>
@@ -607,7 +591,7 @@
                             <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/highway-code-updates.html" itemprop="url">Understanding the Highway Code – Key Changes</a>
                             </h3>
-                            <p class="blog-excerpt" itemprop="description">Navigate the updated Highway Code rules every driver needs to know. New hierarchy of road users, cycling provisions, and pedestrian priority.</p>
+                            <p class="blog-excerpt" itemprop="description">Navigate the updated Highway Code rules every driver needs to know – new hierarchy, cycling provisions, and pedestrian priority.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 12 min read</span>
                             </div>
@@ -617,10 +601,10 @@
                         <meta itemprop="dateModified" content="2026-06-10">
                     </article>
 
-                    <!-- 8. First Lesson -->
+                    <!-- 8. First Driving Lesson (FIXED) -->
                     <article class="blog-card" data-category="local" role="listitem" itemscope itemtype="https://schema.org/BlogPosting">
                         <div class="blog-card-image">
-                            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ed5fa?w=600&h=400&fit=crop&crop=center" 
+                            <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=600&h=400&fit=crop&crop=center" 
                                  alt="First driving lesson with instructor in Newham" 
                                  loading="lazy"
                                  itemprop="image">
@@ -631,7 +615,7 @@
                             <h3 class="blog-title" itemprop="headline">
                                 <a href="blog/first-lesson-what-to-expect.html" itemprop="url">What to Expect on Your First Driving Lesson in Newham</a>
                             </h3>
-                            <p class="blog-excerpt" itemprop="description">A complete guide to help you prepare for your very first lesson with confidence. What to wear, what to bring, and what happens.</p>
+                            <p class="blog-excerpt" itemprop="description">A complete guide to help you prepare for your very first lesson – what to wear, what to bring, and what happens during the session.</p>
                             <div class="blog-meta">
                                 <span><i data-lucide="clock" aria-hidden="true"></i> 6 min read</span>
                                 <span><i data-lucide="map-pin" aria-hidden="true"></i> Newham</span>
@@ -751,7 +735,7 @@
             });
         }
 
-        // Blog filter (updated categories)
+        // Blog filter
         const filterBtns = document.querySelectorAll('.filter-btn');
         const blogCards = document.querySelectorAll('.blog-card');
 
