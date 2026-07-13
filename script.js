@@ -17,6 +17,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        if (navUl && navUl.classList.contains('active')) {
+            if (!e.target.closest('nav') && !e.target.closest('.mobile-menu-btn')) {
+                navUl.classList.remove('active');
+            }
+        }
+    });
+
     // Set active navigation link
     const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks2 = document.querySelectorAll('nav ul li a');
